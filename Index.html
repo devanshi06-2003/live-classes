@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IPA Institute</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: #f0f4ff;
+      color: #1d1d1d;
+    }
+
+    header {
+      background: #ffffff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #ddd;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .logo img {
+      width: 40px;
+    }
+
+    .logo-text h1 {
+      font-size: 1.2rem;
+      color: #153e90;
+    }
+
+    .logo-text p {
+      font-size: 0.85rem;
+      color: #888;
+    }
+
+    .contact span {
+      color: #153e90;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    main {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      padding: 3rem 14rem;
+      gap: 2rem;
+    }
+
+    .left-section, .form-section {
+      flex: 1 1 400px;
+      max-width: 600px;
+    }
+
+    .left-section h2 {
+      font-size: 2rem;
+      color: #153e90;
+      margin-bottom: 1rem;
+    }
+
+    .left-section .highlight {
+      color: #ff0000;
+    }
+
+    .left-section p {
+      margin-bottom: 1rem;
+      line-height: 1.6;
+      color: #000000;
+    }
+
+    .left-section ul {
+      list-style: none;
+      margin-bottom: 2rem;
+    }
+
+    .left-section li {
+      margin-bottom: 0.75rem;
+      color: #d67d08;
+      font-weight: 500;
+    }
+
+    .students-box {
+      background: #1a4ed1;
+      color: #fff;
+      padding: 1rem;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .students-box img {
+      width: 30px;
+      vertical-align: middle;
+    }
+
+    .form-section {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(255, 48, 12, 0.05);
+    }
+
+    .form-section h3 {
+      color: #153e90;
+      margin-bottom: 0.5rem;
+    }
+
+    .form-section p {
+      font-size: 0.9rem;
+      color: #000000;
+      margin-bottom: 1.5rem;
+    }
+
+    form input,
+    form select {
+      width: 100%;
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    form button {
+      width: 100%;
+      background: #1aaa7f;
+      color: #fff;
+      border: none;
+      padding: 0.9rem;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background: #189f73;
+    }
+
+    .privacy {
+      font-size: 0.75rem;
+      color: #888;
+      margin-top: 1rem;
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      main {
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 1rem;
+      }
+    }
+     footer {
+      background: #1a2e7b;
+      color: #fff;
+      text-align: center;
+      padding: 1rem 2rem;
+      font-size: 0.9rem;
+    }
+
+    footer p {
+      margin: 0.3rem 0;
+    }
+
+    footer span {
+      display: inline-block;
+      margin: 0 1rem;
+    }
+
+    @media (max-width: 768px) {
+      main {
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="IPA Logo.png" alt="logo" />
+      <div class="logo-text">
+        <h1>IPA Institute</h1>
+        <p>24 X 7 Education Hub </p>
+      </div>
+    </div>
+    <div class="contact">
+      <span>📞 +91-8764627117</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="left-section">
+      <p>Struggling with Business Law in CA Foundation?</p>
+      <h2>Let’s fix the subject that could fail you — <span class="highlight">FREE</span></h2>
+      <p>Get your hands on the most no-nonsense LAW prep kit, curated by experts, trusted by toppers.
+        <span class="highlight">🎯 The CA Foundation Law Prep Kit Includes:</span>
+      </p>
+      <ul>
+        <li>📚 Section-wise Breakdown </li>
+        <li>⚖️ Case Law Sheet </li>
+        <li>🧠 Last-Day Revision Notes </li>
+        <li>📅 45-Day Tracker   </li>
+      </ul>
+      <div class="students-box">
+        <strong> Join 10,000+ Students </strong>
+        <p>Just fill the form and download the entire kit.</p>
+      </div>
+    </section>
+
+    <section class="form-section">
+      <form id="studyForm">
+        <h3>Get Your Study Resources</h3>
+        <p>Fill in your details to download instantly</p>
+
+        <input type="text" placeholder="Enter your full name" name="fullName" required />
+        <input type="tel" placeholder="Enter 10-digit mobile number" name="mobile" pattern="[0-9]{10}" required />
+        <input type="email" placeholder="Enter email" name="email" required />
+        <input type="tel" placeholder="Attempt" name="Attempt" required />
+        <select name="stream" required>
+          <option value="">Going to any Coaching classes</option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+        <button type="submit" ><a href ="2 - Copy.html">🎯 Get My Download Sheet</a></button>
+        <p class="privacy">🔒  No spam, no random calls. We hate that too. <span class="highlight">Made by CA Mahendra Singh Shekhawat, who gets what students need.</span></p>
+      </form>
+    </section>
+  </main>
+<footer>
+    <p><strong>IPA Institute</strong></p>
+    <p>24 X 7 Education Hub</p>
+    <p>
+      <span>📧 teamindused@gmail.com</span>
+      <span>📞 +91-8764627117</span>
+      <span>📍 IPA Building, Near Ajmer Club, Neeti Marg, Ajmer </span>
+    </p>
+  </footer>
+</body>
+</html>
